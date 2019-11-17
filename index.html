@@ -15,7 +15,9 @@
         <form class="userRequest">
             <label for="states">Enter a State</label>
             <input type="text" id="states" pattern=".{2,}" required title="2 characters minimum" maxlength="2" placeholder="example CA" >
-            <input type="submit" value="add state">
+            <label for="maxResults">Select Max results</label>
+            <input type="number" name="maxResults" id="returnResults" min="1" required value="10">
+            <input type="submit" value="add state" id="submitButton">
         </form>
         <section class="displayUserStates hidden">
           

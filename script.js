@@ -1,24 +1,14 @@
-let states = [];
+let states = '';
 
 // The user must be able to search for parks in one or more states.
 function getStates(){
     $('.userRequest').submit(event => {
-        // let pushArr = [];
         event.preventDefault();
-        let value = $('#states').val();
-        states.push(value);
-        $('#states').val('');
-        renderStates();
+        states = $('#states').val().toLowerCase();
+        console.log(states);
     });
 };
 
-
-function renderStates(){
-    for (let i = 0; i < states.length; i++){
-        $('.displayUserStates').append(`<h6>${states[i]}</h6>`);
-        $('.displayUserStates').removeClass('hidden');
-    }
-};
 
 // The user must be able to set the max number of results, with a default of 10.
 // The search must trigger a call to NPS's API.

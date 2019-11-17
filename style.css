@@ -3,3 +3,18 @@
     color: ;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+label, input {
+    margin: 2px;
+}
+
+#submitButton {
+    padding: 3px;
+    background-color: green;
+    font-weight: 700;
+}
