@@ -13,8 +13,9 @@
             <H1>Vacation Planner</H1>
         </header>
         <form class="userRequest">
-            <label for="states">Enter a State</label>
-            <input type="text" id="states" pattern=".{2,}" required title="2 characters minimum" maxlength="2" placeholder="example CA" >
+            <label for="states">Enter a State or multiple states</label>
+            <input type="text" id="states" minlength="2" required placeholder="Example CA   Multiple CA,FL
+            ">
             <label for="maxResults">Select Max results</label>
             <input type="number" name="maxResults" id="returnResults" min="1" required value="10">
             <input type="submit" value="add state" id="submitButton">
